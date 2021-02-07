@@ -1,0 +1,57 @@
+<div id="nav-border" class="nav-container">
+  <nav id="nav" class="nav">
+    <div class="logo-container">
+      <img class="img-fluid logo" src="/images/dd_logo_v_white.png" />
+      <div class="mobile-menu pr-3">
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </div>
+
+    <div id="nav-mobile" class="nav-buttons-mobile">
+      <div class="d-none d-sm-block pt-4"></div>
+      {{ range .Site.Menus.main }}
+      <a class="nav-link" href="{{ .URL }}">
+        {{ $text := print .Name | safeHTML }} {{ $text }}
+      </a>
+      {{ end }}
+    </div>
+  </nav>
+</div>
+
+<!-- <div id="nav-border" class="nav-container">
+  <nav class="navbar fixed-top navbar-expand-xs">
+    <a class="navbar-brand" href="#">
+      <img
+        class="img-fluid"
+        src="/images/dd_logo_v_white.png"
+        width="50"
+        height="50"
+        alt=""
+      />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        {{ range .Site.Menus.main }}
+        <a class="nav-link" href="{{ .URL }}">
+          {{ $text := print .Name | safeHTML }} {{ $text }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </nav>
+</div> -->
