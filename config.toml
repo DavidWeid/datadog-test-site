@@ -1,37 +1,35 @@
 baseURL = "https://main.dsil1b5ijwqvu.amplifyapp.com/"
+# also at: http://datadog-test-site.s3-website-us-east-1.amazonaws.com/
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Datadog Test Site"
 theme = "datadog"
-#theme = "bootstrap"
 
 [menu]
   [[menu.main]]
     name = "Product"
-    pre = "home"
     url = "/"
     weight = 1
   [[menu.main]]
     name = "Docs"
-    pre = "pen-tool"
     url = "/posts/"
     weight = 2
   [[menu.main]]
     name = "Pricing"
-    pre = "tag"
     url = "/tags/"
     weight = 3
   [[menu.main]]
     name = "Customers"
-    pre = "home"
     url = "/"
     weight = 4
   [[menu.main]]
     name = "About"
-    pre = "home"
     url = "/"
     weight = 5
   [[menu.main]]
     name = "Blog"
-    pre = "home"
     url = "/"
     weight = 6
+
+  [[menu.extra]]
+    name = "Login"
+    url = "/"

@@ -5,9 +5,9 @@
       <div class="col-12 col-lg-4 py-4 pl-0">
         <div class="card-primary">
           <div>
-            <h1 class="font-weight-bold">Modern monitoring & analytics</h1>
+            <h1 class="font-weight-bold">{{ .Title }}</h1>
             <p class="semibold-text larger-text">
-              See inside any stack, any app, at any scale, anywhere.
+              {{ .Description }}
             </p>
           </div>
           <div class="try-free-container">
@@ -98,21 +98,21 @@
   <div class="container">
     <div class="row">
       <div class="card-columns">
-        <div class="card card-apm">
+        <a href="#" class="card card-apm">
           <div class="card-body">
             <span class="text-uppercase small">APM</span>
             <h2 class="card-title">
               Get full visibility into modern applications
             </h2>
           </div>
-        </div>
+        </a>
 
-        <div class="card card-logs">
+        <a href="#" class="card card-logs">
           <div class="card-body">
             <span class="text-uppercase small">Logs Management</span>
             <h2 class="card-title">Analyze and explore log data in context</h2>
           </div>
-        </div>
+        </a>
 
         <div class="d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
           <h3 class="text-center py-4 text-purple">
@@ -126,20 +126,34 @@
               <div class="col-12 col-sm-4 customers-first-squares">
                 <div class="card-square card-airbnb">
                   <img
+                    loading="lazy"
                     class="img-fluid"
                     src="/images/customers/logo-airbnb.png"
+                    width="114"
+                    height="36"
+                    alt="Datadog customer - Airbnb"
                   />
                 </div>
                 <div class="card-square card-peloton">
                   <img
+                    loading="lazy"
                     class="img-fluid"
                     src="/images/customers/logo-peloton.png"
+                    width="129"
+                    height="39"
+                    alt="Datadog customer - Peloton"
                   />
                 </div>
               </div>
               <div class="card-square card-adroll col-12 col-sm-8">
                 <div class="py-5 px-4">
-                  <img src="/images/customers/logo-adroll.png" />
+                  <img
+                    loading="lazy"
+                    src="/images/customers/logo-adroll.png"
+                    width="106"
+                    height="19"
+                    alt="Datadog customer - AdRoll"
+                  />
                   <p class="pt-3">
                     “Datadog has been instrumental in managing our real-time
                     infrastructure, globally distributed in 5 data centers
@@ -161,24 +175,36 @@
               <div class="col-4">
                 <div class="card-square card-evernote">
                   <img
+                    loading="lazy"
                     class="img-fluid"
                     src="/images/customers/logo-evernote.png"
+                    width="276"
+                    height="69"
+                    alt="Datadog customer - Evernote"
                   />
                 </div>
               </div>
               <div class="col-4">
                 <div class="card-square card-samsung">
                   <img
+                    loading="lazy"
                     class="img-fluid"
                     src="/images/customers/logo-samsung.png"
+                    width="238"
+                    height="37"
+                    alt="Datadog customer - Samsung"
                   />
                 </div>
               </div>
               <div class="col-4">
                 <div class="card-square card-nginx">
                   <img
+                    loading="lazy"
                     class="img-fluid"
                     src="/images/customers/logo-nginx.png"
+                    width="196"
+                    height="43"
+                    alt="Datadog customer - Nginx"
                   />
                 </div>
               </div>
@@ -187,34 +213,49 @@
               <div class="col-4">
                 <div class="card-square card-pagerduty">
                   <img
+                    loading="lazy"
                     class="img-fluid"
                     src="/images/customers/logo-pagerduty.png"
+                    width="258"
+                    height="94"
+                    alt="Datadog customer - Pagerduty"
                   />
                 </div>
               </div>
               <div class="col-4">
                 <div class="card-square card-whole-foods">
                   <img
+                    loading="lazy"
                     class="img-fluid"
                     src="/images/customers/logo-whole-foods.png"
+                    width="275"
+                    height="49"
+                    alt="Datadog customer - Whole Foods"
                   />
                 </div>
               </div>
               <div class="col-4">
                 <div class="card-square card-att">
-                  <img class="img-fluid" src="/images/customers/logo-att.png" />
+                  <img
+                    loading="lazy"
+                    class="img-fluid"
+                    src="/images/customers/logo-att.png"
+                    width="202"
+                    height="83"
+                    alt="Datadog customer - AT&T"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="card card-infrastructure">
+        <a href="#" class="card card-infrastructure">
           <div class="card-body">
             <span class="text-uppercase small">Infrastructure</span>
             <h2 class="card-title">See across systems, apps, and services</h2>
           </div>
-        </div>
+        </a>
 
         <div class="card card-observability">
           <div class="card-body">
@@ -245,7 +286,14 @@
             </div>
 
             <div class="pt-5">
-              <img class="img-fluid" src="/images/home-observability.png" />
+              <img
+                loading="lazy"
+                class="img-fluid"
+                src="/images/home-observability.png"
+                width="440"
+                height="268"
+                alt="Datadog - Obervability"
+              />
             </div>
           </div>
         </div>

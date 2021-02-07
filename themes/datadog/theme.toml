@@ -3,8 +3,8 @@
 
 name = "Datadog"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+licenselink = "https://github.com/DavidWeid/datadog-test-site/blob/master/LICENSE"
+description = "Not a real theme"
 homepage = "http://example.com/"
 tags = []
 features = []
@@ -12,10 +12,4 @@ min_version = "0.41.0"
 
 [author]
   name = "David Weid"
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  homepage = "https://github.com/DavidWeid"

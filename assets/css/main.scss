@@ -28,6 +28,7 @@ body {
   font-weight: 600;
 }
 
+// Create a grid of 2 rows and 2 columns (3 rows and 1 column on mobile)
 .primary-container {
   min-height: 100%;
   display: grid;
@@ -52,93 +53,6 @@ body {
 
 #footer {
   grid-area: footer;
-}
-
-.nav-container {
-  background-color: #724eef;
-  color: white;
-
-  & .logo {
-    padding: 16px;
-  }
-
-  & .mobile-menu {
-    display: none;
-  }
-
-  & a.nav-link {
-    color: white;
-
-    &:hover {
-      color: gray;
-    }
-  }
-
-  @media screen and (max-width: 540px) {
-    & .logo-container {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      & img {
-        padding: 6px;
-        width: 65px;
-      }
-    }
-
-    & .mobile-menu {
-      display: unset;
-
-      & a.icon {
-        color: white;
-
-        &:hover {
-          color: gray;
-        }
-      }
-    }
-
-    & .nav-buttons-mobile {
-      background-color: #724eef;
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      z-index: 1;
-      top: 75px;
-      left: 0;
-      height: calc(100vh - 75px);
-      width: 100%;
-      padding-top: 24px;
-    }
-  }
-}
-
-.footer-container {
-  color: white;
-  background: linear-gradient(180deg, #443e48 0%, #110617 100%);
-
-  & p {
-    margin: 0;
-
-    & a {
-      color: white;
-      text-decoration: none;
-
-      &:hover {
-        color: #724eef;
-      }
-    }
-  }
-
-  & button {
-    letter-spacing: 1px;
-    font-weight: 600;
-
-    &:hover {
-      background-color: #724eef;
-    }
-  }
 }
 
 .homepage-container {
@@ -227,7 +141,10 @@ body {
       border-right: 1px solid #e4e4e4;
 
       @media screen and (max-width: 540px) {
-        border: none;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
       }
     }
 
@@ -254,6 +171,16 @@ body {
       column-count: 1;
       display: flex;
       flex-direction: column;
+    }
+
+    & a.card {
+      transition: 1.25s ease-out;
+
+      &:hover {
+        border: 1px solid;
+        padding-bottom: 0;
+        background: #724eef;
+      }
     }
 
     & .card-apm,
@@ -325,11 +252,16 @@ body {
       }
 
       & .card-square {
+        transition: 1s ease;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
         width: 100%;
+
+        &:hover {
+          opacity: 0.8;
+        }
 
         &:after {
           content: "";

@@ -3,6 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
   {{ $style := resources.Get "css/main.scss" }}
+  {{ $components := readDir "assets/css/components" }}
+  {{ range $components }}
+    {{ $component := resources.Get (printf "css/components/%s" .Name) }}
+    {{ $style = slice $component $style | resources.Concat .Name }}
+  {{ end }}
   {{ $style = $style | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
   {{ $title := print .Site.Title " | " .Title }}

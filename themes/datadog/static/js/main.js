@@ -1,4 +1,4 @@
-console.log("Hello");
+console.log("Hello. This is a test site for Datadog by David Weid II.");
 
 const toggleNav = () => {
   const navDiv = document.getElementById("nav-mobile");

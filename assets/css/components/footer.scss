@@ -1,0 +1,26 @@
+.footer-container {
+  color: white;
+  background: linear-gradient(180deg, #443e48 0%, #110617 100%);
+
+  & p {
+    margin: 0;
+
+    & a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: #724eef;
+      }
+    }
+  }
+
+  & button {
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #724eef;
+    }
+  }
+}
