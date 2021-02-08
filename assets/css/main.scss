@@ -136,6 +136,14 @@ body {
       }
     }
 
+    .card-comparison-container {
+      transition: all 0.5s ease-out;
+
+      &:hover {
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+
     .border-comparison {
       border-left: 1px solid #e4e4e4;
       border-right: 1px solid #e4e4e4;
@@ -173,8 +181,9 @@ body {
       flex-direction: column;
     }
 
+    // Link cards are the APM, Logs, and Infrastructure cards
     & a.card {
-      transition: 1.25s ease-out;
+      transition: all 1.25s ease-in-out;
 
       &:hover {
         border: 1px solid;
@@ -183,6 +192,7 @@ body {
       }
     }
 
+    // Define order for when in 1 column flexbox
     & .card-apm,
     .card-infrastructure,
     .card-logs,
@@ -197,6 +207,7 @@ body {
       &.card-apm,
       &.card-logs,
       &.card-infrastructure {
+        transition: 1.25s;
         height: 200px;
         color: white;
 
@@ -231,6 +242,7 @@ body {
             color: rgba(0, 0, 0, 0.75);
 
             & .chevron-right-icon {
+              transition: 0.3s;
               width: 55px;
               height: 55px;
             }
@@ -238,6 +250,10 @@ body {
             &:hover {
               color: #724eef;
               border: none;
+
+              & .chevron-right-icon {
+                transform: translateX(6%);
+              }
             }
           }
         }
@@ -245,6 +261,7 @@ body {
 
       // The square Customers cards
       & .customers-first-squares {
+        // Mobile these cards need to form 1 row
         @media screen and (max-width: 540px) {
           display: flex;
           height: 100%;
@@ -252,7 +269,7 @@ body {
       }
 
       & .card-square {
-        transition: 1s ease;
+        transition: 1.25s ease;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -263,6 +280,7 @@ body {
           opacity: 0.8;
         }
 
+        // This makes the cards square
         &:after {
           content: "";
           display: block;

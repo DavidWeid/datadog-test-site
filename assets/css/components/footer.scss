@@ -6,6 +6,7 @@
     margin: 0;
 
     & a {
+      transition: 0.2s;
       color: white;
       text-decoration: none;
 
@@ -15,12 +16,15 @@
     }
   }
 
-  & button {
+  & button.footer-cta {
+    color: white;
+    border-color: white;
     letter-spacing: 1px;
     font-weight: 600;
 
     &:hover {
-      background-color: #724eef;
+      background-color: white;
+      color: #632ca6;
     }
   }
 }
