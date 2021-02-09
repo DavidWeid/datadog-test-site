@@ -15,3 +15,8 @@ Possible additions:
 Future work: Need to learn more on Hugo content and templating.
 
 To deploy and develop on a host machine, install hugo. Clone repo down. Use `$ hugo server -D`.
+
+Resources:
+
+  -  [Youtube Video on SASS Pipeline in Hugo](https://www.youtube.com/watch?v=NKLwuZIkReg&ab_channel=Jantcu)
+  -  [Youtuber Mike Dane has video turturials on Hugo](https://www.youtube.com/watch?v=qtIqKaDlqXo&t=5s&ab_channel=MikeDane)
