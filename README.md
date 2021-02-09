@@ -21,4 +21,4 @@ Resources:
   -  [Youtube Video on SASS Pipeline in Hugo](https://www.youtube.com/watch?v=NKLwuZIkReg&ab_channel=Jantcu)
   -  [Youtuber Mike Dane has video turturials on Hugo](https://www.youtube.com/watch?v=qtIqKaDlqXo&t=5s&ab_channel=MikeDane)
 
-![alt text](./github-images/Desktop.png)
+![Homepage](./github-images/Desktop.png)
