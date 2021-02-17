@@ -12,7 +12,10 @@ JS: Not really needed for this page. Some really basic coding for the navbar for
   - On desktop / mobile, could have the navigation buttons (desktop) or navbar itself (mobile) follow the user on scroll.
   - On desktop, customer square boxes could do more on hover (stylistic choice)
   
-**Future work**: Need to learn more on Hugo content and templating. This would make making changes and updates to the page easier.
+**Future work**:
+
+  - Need to learn more on Hugo content and templating. This would make making changes and updates to the page easier.
+  - Could deploy to a real URL (not AWS's generated one)
 
 To deploy and develop on a host machine, install hugo. Clone repo down. Use `$ hugo server -D`.
 
